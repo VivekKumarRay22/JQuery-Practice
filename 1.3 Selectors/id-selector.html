@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Selector</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#test").hide()
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h2>ID Selector Example</h2>
+
+    <p>This paragraph does not have the "test" ID.</p>
+
+    <p id="test">This paragraph has the unique ID "test" and will be hidden.</p>
+
+    <p>This paragraph has no ID and will remain visible.</p>
+
+    <button>Hide the element with ID "test"</button>
+  </body>
+</html>

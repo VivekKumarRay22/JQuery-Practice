@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Selector</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("button").click(function () {
+          $(".test").hide()
+        })
+      })
+    </script>
+  </head>
+
+  <body>
+    <h2 class="test">This heading uses the "test" class.</h2>
+
+    <p class="test">This paragraph also uses the "test" class.</p>
+
+    <p>This paragraph does not have the "test" class.</p>
+
+    <button>Hide all elements with class "test"</button>
+  </body>
+</html>

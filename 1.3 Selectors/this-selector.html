@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This Selector</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(this).hide()
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h2>$(this) Selector Example</h2>
+
+    <p>Click any button below to hide that button only.</p>
+
+    <button style="background-color: red">Hide this button</button>
+    <button style="background-color: rgb(0, 255, 81)">Hide this button</button>
+    <button style="background-color: rgb(58, 58, 241)">Hide this button</button>
+  </body>
+</html>
