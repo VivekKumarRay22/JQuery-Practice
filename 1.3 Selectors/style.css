@@ -15,6 +15,7 @@ button {
     border: none;
     cursor: pointer;
     padding: 10px 20px;
+    margin: 5px;
     border-radius: 8px;
     background-color: blueviolet;
 }
