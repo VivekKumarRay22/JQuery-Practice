@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>on()</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Single event
+        $("#single").on("click", function () {
+          $(this).text("Clicked!")
+        })
+
+        // Multiple events
+        $("#multiple").on({
+          mouseenter: function () {
+            $(this).css("background-color", "lightblue")
+          },
+
+          click: function () {
+            $(this).text("Clicked!")
+          },
+        })
+      })
+    </script>
+
+    <style>
+      .box {
+        width: 200px;
+        padding: 30px;
+        margin: 20px 0;
+        border: 2px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>on() Event</h2>
+
+    <div id="single" class="box">Click me - Single Event</div>
+
+    <div id="multiple" class="box">Enter or click me - Multiple Events</div>
+  </body>
+</html>

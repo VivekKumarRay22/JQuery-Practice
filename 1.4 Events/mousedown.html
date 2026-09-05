@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mousedown()</title>
+    <style>
+      button {
+        background-color: rgb(7, 63, 231);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      button:active {
+        transition: scale(0.9);
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").mousedown(function () {
+          $(this).text("This button is pressed.")
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h2>mousedown() event</h2>
+    <button>Press and hold the button.</button>
+  </body>
+</html>

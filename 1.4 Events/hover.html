@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".box").hover(
+          function () {
+            $(this).css("border-radius", "20px")
+            $(this).css("background-color", "rgb(83, 13, 222)")
+            $(this).find("p").text("Mouse entered!")
+          },
+          function () {
+            $(this).css("background-color", "rgb(222, 128, 13)")
+            $(this).css("border-radius", "0px")
+            $(this).find("p").text("Mouse left!")
+          },
+        )
+      })
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: #444;
+        color: wheat;
+      }
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(0, 157, 255);
+        padding: 20px;
+        border: solid 2px black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>hover() event</h2>
+    <div class="box">
+      <h3>Hover your mouse here.</h3>
+      <p>Move your mouse here.</p>
+    </div>
+  </body>
+</html>

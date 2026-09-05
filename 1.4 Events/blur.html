@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blur() event</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("input").blur(function () {
+          $(this).css("background-color", "blue")
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h2>blur() event</h2>
+    <input type="text" placeholder="click inside then outside" />
+  </body>
+</html>
